@@ -1,16 +1,12 @@
-button = document.getElementById("btn");
+var searchLocation;
 
-button.addEventListener("click", function(){
-	console.log("data");
-	var request = new XMLHttpRequest();
-	request.open('GET','http://www.renerahomes.com/landlord_all.php');
-	request.onload = function(){
+var request = new XMLHttpRequest();
+request.open('GET','http://www.renerahomes.com/landlord_all.php');
+request.onload = function(){
 	var landlordData = JSON.parse(request.responseText);
 	show(landlordData);
-	console.log("data");
-	};
-	request.send();
-});
+}
+request.send();
 
 function landlordInfo(information){
 		return `
@@ -22,6 +18,8 @@ function landlordInfo(information){
 			<h5 class="landlord-sides">Type: ${information.type}<span>    ||    Preferances: ${information.preferance}</span></h5>
 			<h5 class="landlord-sides">Number Of Rooms: ${information.rooms}</h5>
 			<h3 class="landlord-price">Rs.${information.minprice}-${information.maxprice}</h3>
+			<br>
+			<button>View More</button>
 		</div>
 	`
 	}
