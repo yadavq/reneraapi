@@ -1,0 +1,49 @@
+.landlord-title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.6rem;
+}
+
+.footer {
+  font-size: .7rem;
+  color: #888;
+  text-align: center;
+  margin: 0;
+}
+
+.landlordName {
+  max-width: 650px;
+  padding: 20px;
+  margin: 30px auto;
+  background-color: #FFF;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+  overflow: hidden;
+  border-radius: 20px;
+}
+.landlord-photo {
+  float: left;
+  width: 40%;
+  margin-right: 15px;
+  border-radius: 20px;
+}
+
+.landlord-price{
+  float: right;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+  color: green;
+}
+
+.landlord-information {
+  float: right;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+  color: green;
+}
+
+.landlord-sides {
+  font-weight: normal;
+  font-size: 0.8rem;
+}
